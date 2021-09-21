@@ -3,22 +3,13 @@ var name = readlineSync.question('May I know your name? ');
 var score = 0,sum = 10;
 console.log('welcome ' + name);
 
-var age = readlineSync.question("Are you 25 yo? ")
-
-if(true)
-  {
-    console.log("you are over 25");
-  }
-else
-  console.log("you are not 25");
-
-function calc( a , b ){
+/*function calc( a , b ){
   var sum = a + b;
   return sum;
 }
 
 calc(10 , 20)
-
+*/
 function play(question , answer){
 
   var userAnswer = readlineSync.question(question);
@@ -41,7 +32,7 @@ play("Where do I live? ","Hyderabad");
 
 play("How old am I?", 19);
 
-for( i = 0 ; i<= 4 ; i++){
+/*for( i = 0 ; i<= 4 ; i++){
   console.log("Muneeb" + i + "'th print");
 }
 
@@ -70,7 +61,7 @@ var batman= {
 }
 
 console.log("Power Level Of batman : " + batman.power);
-
+*/
 var questionOne = {
   question : "Who my fav artist? ",
   answer : "NF",
@@ -86,8 +77,10 @@ var questionThree = {
   answer : "science fiction",
 }
 
-var questionList = [questionOne , questionTwo , questionThree];
+var questionList = [questionOne,questionTwo , questionThree];
 
+play(questionList[0].question,questionList[0].answer);
 play(questionList[1].question,questionList[1].answer);
 play(questionList[2].question,questionList[2].answer);
-play(questionList[3].question,questionList[3].answer);
+
+
